@@ -141,14 +141,23 @@ main{
     height: 1.6rem;
     color: #757575;
  }
+ /* slider tables */
+ .main-tables-container{
+   margin-top: 80px;
+   display: flex;
+   height: 350px;
+   overflow-x: scroll;
+   overscroll-behavior-x: contain;
+   scroll-snap-type: x proximity;
+ }
  /* main currency table */
  .main-currency-table{
+   scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 340px;
-    margin: 0 auto;
-    margin-top: 80px;
+    margin: 0 10px;
     font-family: 'Inter', sans-serif;
  }
  .main-currency-table .currency-table--title{
@@ -232,12 +241,13 @@ main{
 
  /* main commissions table */
  .main-commissions-table{
-   width: 70%;
-   min-width: 235px;
-   max-width: 500px;
-   height: 340px;
-   margin: 0 auto;
-   font-family: 'Inter', sans-serif;
+   scroll-snap-align: center;
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 340px;
+    margin: 0 10px;
+    font-family: 'Inter', sans-serif;
 }
 .main-commissions-table .commissions-table--title{
    margin-bottom: 15px;
@@ -412,7 +422,6 @@ main{
    min-width: 288px;
    height: auto;
    margin: 0 auto;
-   margin-bottom: 50px;
 }
 .plans--title h2{
    padding-top: 50px;
@@ -428,10 +437,10 @@ main{
    line-height: 1.8rem;
    color: #757575;
 }
-/* slider */
+/* slider plans card */
 .plans-container--slider{
    display: flex;
-   height: 316px;
+   height: 350px;
    overflow-x: scroll;
    overscroll-behavior-x: contain;
    scroll-snap-type: x proximity;
@@ -533,3 +542,4 @@ footer .left ul{
    text-decoration: none;
    color: var(--just-white);
 }
+
